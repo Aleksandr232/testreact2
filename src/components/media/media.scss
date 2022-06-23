@@ -1,0 +1,38 @@
+.img_media{
+    width: 360px;
+    height: 416px;
+}
+
+.grid_media{
+    position: absolute;
+    top: 75px;
+    margin: 0px -392px;
+    display: grid;
+    grid-template-columns: repeat(3, 430px);
+   grid-template-rows: repeat(3, 448px)
+}
+
+.btn_load{
+    position: absolute;
+    right: 540px;
+    left: 540px;
+    top:1568px;
+    width: 170px;
+    height: 48px;
+    color: #391400;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF ;
+
+    /* тень */
+    
+   /*  box-shadow: 10px 5px 5px ; */
+}
+
+/*  движения кнопки */
+
+/* .btn_load:hover{
+    content: '';
+    transition: 0.1 all;
+    transform: translateX(10px); 
+} */

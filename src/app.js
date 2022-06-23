@@ -7,6 +7,7 @@ import Main from "./components/main/main";
         <div >
              <Header/>
              <Main/>
+             
         </div>
            
        

@@ -3,7 +3,7 @@ import './header.scss'
 
 const Header=()=>{
     return(
-        <div className="header">
+        <section className="header">
             <div className="img">
             <svg xmlns="http://www.w3.org/2000/svg" width="139.825" height="43.416" viewBox="0 0 139.825 43.416">
                 <g id="logo" transform="translate(-1.175)">
@@ -30,7 +30,7 @@ const Header=()=>{
                 <div className="description">
                 Agency provides a full service range including technical skills, design, business understanding.
                 </div>
-        </div>
+        </section>
     )
 }
 

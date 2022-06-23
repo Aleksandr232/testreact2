@@ -4,9 +4,9 @@ import './main.scss'
 
 const Main=()=>{
     return(
-        <div className="main">
+        <section className="main">
            <Tab/>
-        </div>
+        </section>
     )
 }
 
