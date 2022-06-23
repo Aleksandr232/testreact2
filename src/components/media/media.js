@@ -24,7 +24,9 @@ const MediaLoad=()=>{
                            <div style={{width:365, height:420, borderRadius: 13, backgroundColor:active === item ? COLORS.GREEN : COLORS.BLACK}}>
 
                             <div underlayColor={COLORS.GREEN} onClick={() => setActive(item)}>
-                            <img className="img_media" src={item.img} alt=""  />
+                                <img className="img_media" src={item.img} alt=""  />
+                                    <div className="title_btn">{item.title_btn}</div>
+                                    <div className="title">{item.title}</div>
                             
                             </div>
                             
