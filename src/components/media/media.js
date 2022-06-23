@@ -5,7 +5,7 @@ import './media.scss'
 
 
 const MediaLoad=()=>{
-    const[noImg, setnoImg]=useState(3)
+    const[noImg, setnoImg]=useState(9)
     const[active, setActive]=useState(null)
     const loadMore=()=>{
         setnoImg(noImg + noImg)
@@ -28,9 +28,9 @@ const MediaLoad=()=>{
                         
                     )
                 })}
-                <button onClick={()=>loadMore()} className="btn_load">Load More</button>
+                
             </div>
-            
+            <button onClick={()=>loadMore()} className="btn_load">Load More</button>
         </section>
     )
 }
