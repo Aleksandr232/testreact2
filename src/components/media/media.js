@@ -1,21 +1,25 @@
-import React,{useState} from "react";
+import React,{useState, useEffect} from "react";
 import data from "./data";
 import {COLORS} from './colors'
 import './media.scss'
 
 
 const MediaLoad=()=>{
-    const[noImg, setnoImg]=useState(9)
+    const[Img, setImg]=useState(9)
     const[active, setActive]=useState(null)
-    const loadMore=()=>{
-        setnoImg(noImg + noImg)
-    }
 
-    const slice=data.cardData.slice(0,noImg)
+    
+
+    
+    
+    const loadMore=()=>{
+        setImg((prevValue)=>prevValue + 9)
+    }
+   /*  const slice=data.cardData.slice(0,Img) */
     return(
-        <section className="">
+        <section className="media">
             <div className="grid_media" >
-                {slice.map((item, index, idx)=>{
+                {data.cardData.slice(0, Img).map((item)=>{
                     return(
                            <div style={{width:365, height:420, borderRadius: 13, backgroundColor:active === item ? COLORS.GREEN : COLORS.BLACK}}>
 
@@ -23,14 +27,16 @@ const MediaLoad=()=>{
                             <img className="img_media" src={item.img} alt=""  />
                             
                             </div>
+                            
                         </div>
 
                         
                     )
+                    
                 })}
-                
+                <button onClick={loadMore} className="btn_load">Load More</button>
             </div>
-            <button onClick={()=>loadMore()} className="btn_load">Load More</button>
+            
         </section>
     )
 }
