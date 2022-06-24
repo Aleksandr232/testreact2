@@ -7,7 +7,7 @@ const Main=()=>{
     return(
         <section className="main" id='main'>
            <Tab/>
-           <List/>
+           
         </section>
     )
 }

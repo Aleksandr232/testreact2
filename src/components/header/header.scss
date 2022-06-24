@@ -73,11 +73,13 @@ body{
 @media(max-width:1040px){
 
     html {
-        overflow-x: hidden
+        overflow-x: hidden;
+        
     };
 
     body {
-        overflow-x: hidden
+        overflow-x: hidden;
+        
     };
 
     .header{
@@ -134,7 +136,7 @@ body{
     #grid_media{
         position: absolute;
         top: 75px;
-        margin: 0px -475px;;
+        margin: 0px -495px;;
         display: grid;
         grid-template-columns: repeat(1, 430px);
        grid-template-rows: repeat(1, 448px)
@@ -151,5 +153,18 @@ body{
         left: 84px;
         right: -83px;
     }
+
+    .nav-tabs {
+        border-bottom: none;
+        left: -613px;
+        position: absolute;
+    }
         
+    .btn{
+        visibility: hidden;
+    }
+   
+        
+        
+    
 }
