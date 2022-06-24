@@ -9,10 +9,7 @@ const MediaLoad=(props)=>{
     const[active, setActive]=useState(null)
     const[tempSrc, settempSrc]=useState('')
     const[model, setModel]=useState(false)
-    const[del, setDel]=useState(props.del)
-    useEffect(()=>{
-        setDel(props.del);
-    },[props.del]);
+   
     
     
     
