@@ -36,7 +36,7 @@ const data={
         {
             id:4,
             img:bitmap3,
-            title:'DDDone',
+            title:'DDone',
            title_btn:'Motion'
             
         },

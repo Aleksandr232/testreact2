@@ -18,13 +18,13 @@ const MediaLoad=()=>{
    /*  const slice=data.cardData.slice(0,Img) */
     return(
         <section className="media">
-            <div className="grid_media" >
+            <div className="grid_media" id='grid_media' >
                 {data.cardData.slice(0, Img).map((item)=>{
                     return(
                            <div style={{width:365, height:420, borderRadius: 13, backgroundColor:active === item ? COLORS.GREEN : COLORS.BLACK}}>
 
                             <div underlayColor={COLORS.GREEN} onClick={() => setActive(item)}>
-                                <img className="img_media" src={item.img} alt=""  />
+                                <img className="img_media" id='img_media' src={item.img} alt=""  />
                                     <div className="title_btn">{item.title_btn}</div>
                                     <div className="title">{item.title}</div>
                             
@@ -36,7 +36,7 @@ const MediaLoad=()=>{
                     )
                     
                 })}
-                <button onClick={loadMore} className="btn_load">Load More</button>
+                <button onClick={loadMore} className="btn_load" id='btn_load'>Load More</button>
             </div>
             
         </section>
