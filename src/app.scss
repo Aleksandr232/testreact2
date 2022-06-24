@@ -11,7 +11,7 @@
     };
 
     .header{
-        width: 100%;
+        width: 575px;
         height: 400px;
         background-color:#28293E
     };
@@ -56,7 +56,7 @@
     };
 
     #main{
-        width: 100%;
+        width: 575px;
         height: 7807px;
         background-color:#FDF0E9;
     };
@@ -64,7 +64,7 @@
     #grid_media{
         position: absolute;
         top: 75px;
-        margin: 0px -495px;;
+        margin: 0px -554px;;
         display: grid;
         grid-template-columns: repeat(1, 430px);
        grid-template-rows: repeat(1, 448px)
@@ -91,7 +91,23 @@
     .btn{
         visibility: hidden;
     }
+
+    .tab {
+        position: absolute;
+        left: 607px;
+        right: 98px;
+        top: 416px;
+    }
    
+    .link {
+        position: absolute;
+        top: 32px;
+        left: 459.5px;
+        right: 458.5px;
+        display: grid;
+        grid-template-columns: repeat(4, 162px);
+        visibility: hidden;
+    }
         
         
     
